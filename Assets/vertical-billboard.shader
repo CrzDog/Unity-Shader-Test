@@ -43,7 +43,7 @@
 																	0, UNITY_MATRIX_MV[1][1], 0, UNITY_MATRIX_MV[1][3],
 																	0, UNITY_MATRIX_MV[2][1], 1, UNITY_MATRIX_MV[2][3],
 																	UNITY_MATRIX_MV[3][0], UNITY_MATRIX_MV[3][1], UNITY_MATRIX_MV[3][2], UNITY_MATRIX_MV[3][3]);
-				o.vertex = mul(UNITY_MATRIX_P, mul(mvMat, float4(v.vertex.xyz, 1)));
+				o.vertex = mul(UNITY_MATRIX_P, mul(mvMat, v.vertex));
 				// o.vertex = UnityObjectToClipPos(v.vertex);
 				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 				// UNITY_TRANSFER_FOG(o,o.vertex);
