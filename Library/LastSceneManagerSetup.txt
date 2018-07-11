@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/vertical-billboard.unity
-  isLoaded: 1
-  isActive: 1
